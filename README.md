@@ -8,6 +8,12 @@ mmcv-2.2.0-cp311-cp311-manylinux1_x86_64.whl
 uv add mmcv-2.2.0-cp311-cp311-manylinux1_x86_64.whl
 uv sync
 ```
+测试安装是否正常
+```bash
+python demo/image_demo.py demo/demo.jpg \
+    configs/yolov5/yolov5_s-v61_syncbn_fast_8xb16-300e_coco.py \
+    yolov5_s-v61_syncbn_fast_8xb16-300e_coco_20220918_084700-86e02187.pth
+```
 
 ## 模型部署
 使用脱离openmm框架方式进行模型导出，只导出模型，不带框解码
