@@ -1,0 +1,23 @@
+[project]
+name = "mmyolo"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "torch==2.1.0",
+    "torchvision==0.16.0",
+    "numpy==1.26.4",
+    "mmdet>=3.0.0",
+    "mmengine>=0.7.1",
+    "setuptools",
+    "openmim",
+    "onnxsim",
+    "mmcv",
+    "onnxruntime"
+]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.uv.sources]
+mmcv = { path = "mmcv-2.2.0-cp311-cp311-manylinux1_x86_64.whl" }
